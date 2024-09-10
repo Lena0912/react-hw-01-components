@@ -1,16 +1,22 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import { Component } from "react";
+import { Profile } from "./Profile/Profile";
+import user from '../data/user.json';
+
+export class App extends Component {
+  state = {
+    profileItems: user,
+  }
+  render() {
+    const { username, tag, location, avatar, stats } = this.state.profileItems;
+    return (
+      <Profile
+        name={username}
+        tag={tag}
+        location={location}
+        image={avatar}
+        stats={stats}
+      />
+    ); 
+    
+  }
+}
