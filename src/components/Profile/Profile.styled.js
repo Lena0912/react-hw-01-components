@@ -12,6 +12,7 @@ export const Card = styled.div`
   background-color: white;
   border-radius: 10px;
   padding: 20px;
+  border: 2px solid orange;
 `;
 export const Image = styled.img`
   border-radius: 50%;
@@ -25,7 +26,7 @@ export const Avatar = styled.div`
   border: 1px solid green;
   background-color: white;
   padding: 20px;
-  margin-bottom: 20px;
+  
   width: 100%;
   max-width: 300px;
 `;
@@ -58,13 +59,11 @@ export const Socail = styled.ul`
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   max-width: 300px;
-  border-radius: 10px;
-  padding: 20px;
   
-  max-width: 300px;
+  
   
 `;
 
@@ -78,7 +77,7 @@ export const Media = styled.li`
   min-width: 80px;
   padding: 15px;
   border: 1px solid grey;
-  border-radius: 5px;
+  
   
 `;
 
